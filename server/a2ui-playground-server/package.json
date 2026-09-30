@@ -1,0 +1,26 @@
+{
+  "name": "a2ui-playground-server",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch --import ts-node/esm src/index.ts",
+    "start": "node --import ts-node/esm src/index.ts",
+    "build": "tsc",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@koa/cors": "^5.0.0",
+    "a2ui-core": "workspace:*",
+    "koa": "^2.15.4",
+    "koa-bodyparser": "^4.4.1",
+    "openai": "^4.77.0"
+  },
+  "devDependencies": {
+    "@types/koa": "^2.15.0",
+    "@types/koa-bodyparser": "^4.3.12",
+    "@types/koa__cors": "^5.0.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.3"
+  }
+}

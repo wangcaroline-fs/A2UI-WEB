@@ -1,0 +1,26 @@
+{
+  "name": "a2ui-web-playground",
+  "private": true,
+  "version": "0.0.0",
+  "workspaces": [
+    "packages/*",
+    "web/*",
+    "server/*"
+  ],
+  "scripts": {
+    "dev:web": "pnpm --filter a2ui-playground dev",
+    "dev:server": "pnpm --filter a2ui-playground-server dev",
+    "build": "pnpm -r build",
+    "typecheck": "pnpm -r typecheck"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.3"
+  },
+  "engines": {
+    "node": ">=24"
+  },
+  "packageManager": "pnpm@10.11.1",
+  "pnpm": {
+    "onlyBuiltDependencies": ["esbuild"]
+  }
+}
