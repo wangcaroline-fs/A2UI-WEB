@@ -9,11 +9,26 @@
     ".": {
       "types": "./dist/index.d.ts",
       "import": "./dist/index.js"
+    },
+    "./parser": {
+      "types": "./dist/parser/index.d.ts",
+      "import": "./dist/parser/index.js"
+    },
+    "./vNode": {
+      "types": "./dist/vNode/index.d.ts",
+      "import": "./dist/vNode/index.js"
+    },
+    "./treeBuilder": {
+      "types": "./dist/treeBuilder/index.d.ts",
+      "import": "./dist/treeBuilder/index.js"
     }
   },
   "scripts": {
     "build": "tsc",
     "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@a2ui/web_core": "^0.12.0"
   },
   "devDependencies": {
     "typescript": "^5.7.3"
